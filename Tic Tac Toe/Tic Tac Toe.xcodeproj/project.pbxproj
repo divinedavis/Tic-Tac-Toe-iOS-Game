@@ -13,6 +13,9 @@
 		1626586A1B9CC6100063247D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162658691B9CC6100063247D /* Images.xcassets */; };
 		1626586D1B9CC6100063247D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1626586B1B9CC6100063247D /* LaunchScreen.xib */; };
 		162658791B9CC6100063247D /* Tic_Tac_ToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162658781B9CC6100063247D /* Tic_Tac_ToeTests.swift */; };
+		162658841B9D0DDC0063247D /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = 162658821B9D0DDC0063247D /* board.png */; };
+		162658851B9D0DDC0063247D /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 162658831B9D0DDC0063247D /* cross.png */; };
+		162658871B9D0DE30063247D /* nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 162658861B9D0DE30063247D /* nought.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		162658721B9CC6100063247D /* Tic Tac ToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic Tac ToeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		162658771B9CC6100063247D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		162658781B9CC6100063247D /* Tic_Tac_ToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeTests.swift; sourceTree = "<group>"; };
+		162658821B9D0DDC0063247D /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = board.png; path = "../../../../Learn/Coding:Gaming:Drawing/Swift/Udemy iOS8 and Swift Course/Section 6 - Media Images, Maps & Music/6.3 2/Tic Tac Toe/board.png"; sourceTree = "<group>"; };
+		162658831B9D0DDC0063247D /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cross.png; path = "../../../../Learn/Coding:Gaming:Drawing/Swift/Udemy iOS8 and Swift Course/Section 6 - Media Images, Maps & Music/6.3 2/Tic Tac Toe/cross.png"; sourceTree = "<group>"; };
+		162658861B9D0DE30063247D /* nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nought.png; path = "../../../../Learn/Coding:Gaming:Drawing/Swift/Udemy iOS8 and Swift Course/Section 6 - Media Images, Maps & Music/6.3 2/Tic Tac Toe/nought.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 				162658641B9CC6100063247D /* ViewController.swift */,
 				162658661B9CC6100063247D /* Main.storyboard */,
 				162658691B9CC6100063247D /* Images.xcassets */,
+				162658821B9D0DDC0063247D /* board.png */,
+				162658831B9D0DDC0063247D /* cross.png */,
+				162658861B9D0DE30063247D /* nought.png */,
 				1626586B1B9CC6100063247D /* LaunchScreen.xib */,
 				162658601B9CC6100063247D /* Supporting Files */,
 			);
@@ -192,6 +201,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162658851B9D0DDC0063247D /* cross.png in Resources */,
+				162658841B9D0DDC0063247D /* board.png in Resources */,
+				162658871B9D0DE30063247D /* nought.png in Resources */,
 				162658681B9CC6100063247D /* Main.storyboard in Resources */,
 				1626586D1B9CC6100063247D /* LaunchScreen.xib in Resources */,
 				1626586A1B9CC6100063247D /* Images.xcassets in Resources */,
