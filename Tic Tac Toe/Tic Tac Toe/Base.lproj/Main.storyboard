@@ -150,10 +150,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxq-50-J4x">
+                                <rect key="frame" x="120" y="377" width="81" height="30"/>
+                                <color key="backgroundColor" red="0.0217399052" green="0.57978091030000001" blue="0.24839025770000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="Kn2-kR-WMV"/>
+                                    <constraint firstAttribute="height" constant="30" id="bbt-p4-UWr"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Play Again?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgainButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zwS-Ax-tL8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fxn-Ob-sfa" firstAttribute="trailing" secondItem="Eo2-B6-RXR" secondAttribute="trailing" constant="-10" id="4bp-e6-7uX"/>
+                            <constraint firstItem="lxq-50-J4x" firstAttribute="top" secondItem="Eo2-B6-RXR" secondAttribute="top" constant="252" id="5QK-FD-Q2k"/>
                             <constraint firstItem="fxn-Ob-sfa" firstAttribute="centerY" secondItem="Eo2-B6-RXR" secondAttribute="centerY" id="76v-U2-tGX"/>
                             <constraint firstItem="He7-lJ-nB3" firstAttribute="bottom" secondItem="Eo2-B6-RXR" secondAttribute="bottom" constant="-8" id="B5x-uQ-VW6"/>
                             <constraint firstItem="4tn-K5-5O2" firstAttribute="centerX" secondItem="Eo2-B6-RXR" secondAttribute="centerX" constant="-105.5" id="BYo-bA-7Wz"/>
@@ -163,6 +179,7 @@
                             <constraint firstItem="He7-lJ-nB3" firstAttribute="centerX" secondItem="Eo2-B6-RXR" secondAttribute="centerX" constant="-0.5" id="HW7-zZ-TUX"/>
                             <constraint firstItem="UTa-ua-Xjm" firstAttribute="top" secondItem="Eo2-B6-RXR" secondAttribute="top" constant="8" id="IKH-Fy-H34"/>
                             <constraint firstItem="Eo2-B6-RXR" firstAttribute="top" secondItem="rQr-UJ-rec" secondAttribute="top" constant="-116" id="JjY-rQ-nAi"/>
+                            <constraint firstItem="lxq-50-J4x" firstAttribute="leading" secondItem="Eo2-B6-RXR" secondAttribute="leading" constant="121" id="Nuj-go-PHu"/>
                             <constraint firstItem="Eo2-B6-RXR" firstAttribute="bottom" secondItem="ZSb-y0-pFF" secondAttribute="bottom" constant="8" id="SCs-qw-G80"/>
                             <constraint firstItem="Eo2-B6-RXR" firstAttribute="top" secondItem="sFf-SP-3qU" secondAttribute="top" constant="-115" id="Uhb-qJ-rP3"/>
                             <constraint firstItem="Eo2-B6-RXR" firstAttribute="leading" secondItem="rQr-UJ-rec" secondAttribute="leading" id="Zqt-jd-Xu0"/>
@@ -182,6 +199,7 @@
                     <connections>
                         <outlet property="button0" destination="UTa-ua-Xjm" id="qQR-uA-USi"/>
                         <outlet property="label" destination="rQr-UJ-rec" id="pfM-fR-c9a"/>
+                        <outlet property="playAgain" destination="lxq-50-J4x" id="deQ-Pe-P0c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
