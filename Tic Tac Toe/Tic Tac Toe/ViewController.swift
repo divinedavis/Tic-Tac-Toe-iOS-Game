@@ -56,8 +56,10 @@ class ViewController: UIViewController {
                 if (winner == 1) {
                     
                     label.text = "Noughts has won"
+                    label.backgroundColor = UIColor .blueColor()
                 } else {
                     label.text = "Crosses has won"
+                    label.backgroundColor = UIColor .blueColor()
                 }
                 
                 UIView.animateWithDuration(1, animations: {
@@ -81,9 +83,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
-        label.center = CGPointMake(label.center.x - 400, label.center.y)
-    }
+    
 
 
 }
