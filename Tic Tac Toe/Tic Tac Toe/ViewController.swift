@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     let winningCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
 
     @IBOutlet weak var button0: UIButton!
-    @IBOutlet weak var winnerLabel: UILabel!
+    @IBOutlet weak var label: UILabel!
     
     @IBAction func buttonPressed(sender: AnyObject) {
 
@@ -52,6 +52,17 @@ class ViewController: UIViewController {
             if (winner != 0) {
                 
                 println("We have a winner")
+                
+                if (winner == 1) {
+                    
+                    label.text = "Noughts has won"
+                } else {
+                    label.text = "Crosses has won"
+                }
+                
+                UIView.animateWithDuration(1, animations: {
+                    self.label.center = CGPointMake(self.label.center.x + 400, self.label.center.y)
+                })
             }
         
         goNumber++
@@ -68,6 +79,10 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        label.center = CGPointMake(label.center.x - 400, label.center.y)
     }
 
 

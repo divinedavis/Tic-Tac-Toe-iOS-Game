@@ -140,10 +140,15 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zva-jW-MfU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPv-cL-fPT">
-                                <rect key="frame" x="9" y="28" width="301" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQr-UJ-rec">
+                                <rect key="frame" x="-1" y="241" width="321" height="88"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="C1W-iS-2Uw"/>
+                                    <constraint firstAttribute="width" constant="321" id="WOY-g0-kKe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -158,8 +163,10 @@
                             <constraint firstItem="Eo2-B6-RXR" firstAttribute="leading" secondItem="ZSb-y0-pFF" secondAttribute="leading" constant="-10" id="Gmg-7I-h5D"/>
                             <constraint firstItem="He7-lJ-nB3" firstAttribute="centerX" secondItem="Eo2-B6-RXR" secondAttribute="centerX" constant="-0.5" id="HW7-zZ-TUX"/>
                             <constraint firstItem="UTa-ua-Xjm" firstAttribute="top" secondItem="Eo2-B6-RXR" secondAttribute="top" constant="8" id="IKH-Fy-H34"/>
+                            <constraint firstItem="Eo2-B6-RXR" firstAttribute="top" secondItem="rQr-UJ-rec" secondAttribute="top" constant="-116" id="JjY-rQ-nAi"/>
                             <constraint firstItem="Eo2-B6-RXR" firstAttribute="bottom" secondItem="ZSb-y0-pFF" secondAttribute="bottom" constant="8" id="SCs-qw-G80"/>
                             <constraint firstItem="Eo2-B6-RXR" firstAttribute="top" secondItem="sFf-SP-3qU" secondAttribute="top" constant="-115" id="Uhb-qJ-rP3"/>
+                            <constraint firstItem="Eo2-B6-RXR" firstAttribute="leading" secondItem="rQr-UJ-rec" secondAttribute="leading" id="Zqt-jd-Xu0"/>
                             <constraint firstItem="4tn-K5-5O2" firstAttribute="top" secondItem="Eo2-B6-RXR" secondAttribute="top" constant="114" id="c9Y-tJ-hs8"/>
                             <constraint firstItem="Eo2-B6-RXR" firstAttribute="leading" secondItem="dLQ-jQ-wET" secondAttribute="leading" constant="-116" id="eXQ-z8-yaw"/>
                             <constraint firstItem="UTa-ua-Xjm" firstAttribute="leading" secondItem="Eo2-B6-RXR" secondAttribute="leading" constant="10" id="gIw-NB-pO5"/>
@@ -175,7 +182,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="button0" destination="UTa-ua-Xjm" id="qQR-uA-USi"/>
-                        <outlet property="winnerLabel" destination="yPv-cL-fPT" id="UN1-sZ-cIc"/>
+                        <outlet property="label" destination="rQr-UJ-rec" id="pfM-fR-c9a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
