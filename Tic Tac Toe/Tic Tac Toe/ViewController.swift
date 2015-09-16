@@ -26,17 +26,24 @@ class ViewController: UIViewController {
     @IBAction func playAgainButton(sender: AnyObject) {
         
         goNumber = 1
+        
         winner = 0
         
         gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         
-        playAgain.alpha = 0
-        
         label.center = CGPointMake(label.center.x - 400, label.center.y)
         
-        var button : UIButton = view.viewWithTag(1) as! UIButton
+        playAgain.alpha = 0
         
-        button.setImage(nil, forState: .Normal)
+        var button : UIButton?
+        
+        for var i  = 0; i < 9; i++ {
+        
+        button!.viewWithTag(i)
+        
+        button!.setImage(nil, forState: .Normal)
+        
+        }
         
     }
     @IBAction func buttonPressed(sender: AnyObject) {
