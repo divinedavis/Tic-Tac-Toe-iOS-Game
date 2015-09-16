@@ -39,10 +39,10 @@ class ViewController: UIViewController {
         
         for var i  = 0; i < 9; i++ {
         
-        button!.viewWithTag(i)
+            if let btn = button!.viewWithTag(i) as? UIButton {
+                btn.setImage(nil, forState: .Normal)
         
-        button!.setImage(nil, forState: .Normal)
-        
+            }
         }
         
     }
